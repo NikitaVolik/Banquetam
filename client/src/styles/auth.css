@@ -1,0 +1,9 @@
+.form-note {
+  color: var(--color-text);
+  text-align: center;
+}
+
+.form-note a {
+  color: var(--color-primary);
+  font-weight: 600;
+}

@@ -1,0 +1,87 @@
+.admin-toolbar {
+  margin-top: 20px;
+  margin-bottom: 24px;
+}
+
+.admin-toolbar-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.admin-list {
+  display: grid;
+  gap: 16px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.admin-card {
+  padding: 20px 22px;
+}
+
+.admin-card .reservation-card-top {
+  margin-bottom: 12px;
+}
+
+.admin-card .reservation-info-grid {
+  gap: 10px 20px;
+  margin-top: 10px;
+}
+
+.admin-card p + p {
+  margin-top: 8px;
+}
+
+.status-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 12px;
+  margin-top: 16px;
+  padding-right: 14px;
+  border-top: 1px solid var(--color-border);
+}
+
+.status-actions .field {
+  flex: 1 1 220px;
+  max-width: 280px;
+}
+
+.status-actions .btn {
+  min-width: 150px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+}
+
+.pagination p {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .admin-toolbar-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 390px) {
+  .status-actions, .pagination {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .status-actions .btn {
+    width: 100%;
+    min-width: 0;
+  }
+}
